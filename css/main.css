@@ -1679,23 +1679,33 @@ h1 {
   color: #ffe23f;
   font-family: Arial, sans-serif;
   font-size: clamp(1.8rem, 4vw, 3rem);
+  font-weight: 700;
   letter-spacing: 2px;
-  text-shadow: 0 0 10px rgba(255, 226, 63, .5);
+
+  text-shadow:
+    0 2px 5px rgba(0, 0, 0, .95),
+    0 0 10px rgba(255, 226, 63, .35);
+
   opacity: 0;
   animation: aparecer-mensaje-soam 2s 5.5s forwards;
 }
 
 .mensaje-soam p {
   margin-top: 10px;
-  color: rgba(255,255,255,.86);
+  color: #ffffff;
   font-family: Arial, sans-serif;
   font-size: clamp(.82rem, 2vw, 1.05rem);
+  font-weight: 700;
   line-height: 1.6;
   letter-spacing: .8px;
+
+  text-shadow:
+    0 2px 5px rgba(0, 0, 0, 1),
+    0 0 8px rgba(0, 0, 0, .8);
+
   opacity: 0;
   animation: aparecer-mensaje-soam 2s 6.4s forwards;
 }
-
 .mensaje-final {
   position: fixed;
   left: 50%;
