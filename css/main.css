@@ -1694,14 +1694,15 @@ h1 {
   margin-top: 10px;
   color: #ffffff;
   font-family: Arial, sans-serif;
-  font-size: clamp(.82rem, 2vw, 1.05rem);
-  font-weight: 700;
-  line-height: 1.6;
-  letter-spacing: .8px;
+  font-size: clamp(.9rem, 2vw, 1.1rem);
+  font-weight: 900;
+  line-height: 1.55;
+  letter-spacing: .5px;
 
   text-shadow:
-    0 2px 5px rgba(0, 0, 0, 1),
-    0 0 8px rgba(0, 0, 0, .8);
+    0 2px 4px rgba(0, 0, 0, 1),
+    0 0 6px rgba(0, 0, 0, 1),
+    0 0 12px rgba(0, 0, 0, .9);
 
   opacity: 0;
   animation: aparecer-mensaje-soam 2s 6.4s forwards;
