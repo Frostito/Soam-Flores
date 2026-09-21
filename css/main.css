@@ -1730,7 +1730,7 @@ h1 {
   to { opacity: 1; transform: translateY(0); }
 }
 
-@keyframes aparecerMensajeFinal {
+@keyframes aparecer-mensaje-final {
 
     from {
         opacity: 0;
