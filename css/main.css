@@ -1767,17 +1767,6 @@ h1 {
 }
 @media screen and (min-width: 769px) {
 
-    .mensaje-soam h1 {
-        font-weight: 800 !important;
-    }
-
-    .mensaje-soam p {
-        font-weight: 700 !important;
-    }
-
-}
-@media screen and (min-width: 769px) {
-
     .mensaje-soam {
         display: block !important;
         visibility: visible !important;
