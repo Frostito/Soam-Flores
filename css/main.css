@@ -1803,3 +1803,13 @@ body {
     height: 100vh !important;
     transform: none !important;
 }
+@media screen and (max-width: 600px) {
+    html,
+    body {
+        overflow-x: hidden !important;
+    }
+
+    .flowers {
+        max-width: 100vw;
+    }
+}
