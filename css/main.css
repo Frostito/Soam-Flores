@@ -1664,36 +1664,39 @@ h1 {
 ======================================== */
 
 .mensaje-soam {
-  position: fixed;
-  top: 4%;
-  left: 50%;
-  transform: translateX(-50%);
-  width: min(92%, 680px);
-  z-index: 999;
-  text-align: center;
-  pointer-events: none;
+    position: fixed;
+    top: 3%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 900px;
+    z-index: 999;
+    text-align: center;
+    pointer-events: none;
 }
 
 .mensaje-soam h1 {
-  margin: 0;
-  color: #ffe23f;
-  font-family: Arial, sans-serif;
-  font-size: clamp(1.8rem, 4vw, 3rem);
-  letter-spacing: 2px;
-  text-shadow: 0 0 10px rgba(255, 226, 63, .5);
-  opacity: 0;
-  animation: aparecer-mensaje-soam 2s 5.5s forwards;
+    margin: 0;
+    color: #ffe23f;
+    font-family: Arial, sans-serif;
+    font-size: clamp(1.8rem, 4vw, 3rem);
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-shadow: 0 0 8px rgba(255, 226, 63, .45);
+    opacity: 0;
+    animation: aparecerMensaje 2s 5.5s forwards;
 }
 
 .mensaje-soam p {
-  margin-top: 10px;
-  color: rgba(255,255,255,.86);
-  font-family: Arial, sans-serif;
-  font-size: clamp(.82rem, 2vw, 1.05rem);
-  line-height: 1.6;
-  letter-spacing: .8px;
-  opacity: 0;
-  animation: aparecer-mensaje-soam 2s 6.4s forwards;
+    margin-top: 10px;
+    color: rgba(255, 255, 255, .85);
+    font-family: Arial, sans-serif;
+    font-size: clamp(.85rem, 2vw, 1.1rem);
+    font-weight: 500;
+    line-height: 1.6;
+    letter-spacing: 1px;
+    opacity: 0;
+    animation: aparecerMensaje 2s 6.5s forwards;
 }
 
 .mensaje-final {
