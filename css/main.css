@@ -1781,3 +1781,19 @@ h1 {
     font-size: .78rem;
   }
 }
+@media screen and (min-width: 769px) {
+    .mensaje-soam {
+        top: 1.5%;
+    }
+
+    .mensaje-soam h1 {
+        font-weight: 800;
+        font-size: 3rem;
+    }
+
+    .mensaje-soam p {
+        font-weight: 700;
+        font-size: 1.1rem;
+        line-height: 1.7;
+    }
+}
