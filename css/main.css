@@ -1663,21 +1663,37 @@ h1 {
    Agregado sin modificar la animación original
 ======================================== */
 
-@media screen and (min-width: 769px) {
-    .mensaje-soam {
-        top: 1.5%;
-    }
+.mensaje-soam {
+  position: fixed;
+  top: 4%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(92%, 680px);
+  z-index: 999;
+  text-align: center;
+  pointer-events: none;
+}
 
-    .mensaje-soam h1 {
-        font-weight: 800;
-        font-size: 3rem;
-    }
+.mensaje-soam h1 {
+  margin: 0;
+  color: #ffe23f;
+  font-family: Arial, sans-serif;
+  font-size: clamp(1.8rem, 4vw, 3rem);
+  letter-spacing: 2px;
+  text-shadow: 0 0 10px rgba(255, 226, 63, .5);
+  opacity: 0;
+  animation: aparecer-mensaje-soam 2s 5.5s forwards;
+}
 
-    .mensaje-soam p {
-        font-weight: 700;
-        font-size: 1.1rem;
-        line-height: 1.7;
-    }
+.mensaje-soam p {
+  margin-top: 10px;
+  color: rgba(255,255,255,.86);
+  font-family: Arial, sans-serif;
+  font-size: clamp(.82rem, 2vw, 1.05rem);
+  line-height: 1.6;
+  letter-spacing: .8px;
+  opacity: 0;
+  animation: aparecer-mensaje-soam 2s 6.4s forwards;
 }
 
 .mensaje-final {
@@ -1764,52 +1780,4 @@ h1 {
     bottom: 1.8%;
     font-size: .78rem;
   }
-}
-@media screen and (min-width: 769px) {
-
-    .mensaje-soam {
-        display: block !important;
-        visibility: visible !important;
-        opacity: 1 !important;
-
-        position: fixed !important;
-        top: 3% !important;
-        left: 50% !important;
-
-        transform: translateX(-50%) !important;
-
-        width: 90% !important;
-
-        z-index: 9999 !important;
-
-        text-align: center !important;
-    }
-
-    .mensaje-soam h1 {
-        display: block !important;
-        visibility: visible !important;
-        opacity: 1 !important;
-
-        color: #ffe23f !important;
-
-        font-weight: 800 !important;
-
-        animation: none !important;
-    }
-
-    .mensaje-soam p {
-        display: block !important;
-        visibility: visible !important;
-        opacity: 1 !important;
-
-        color: white !important;
-
-        font-weight: 700 !important;
-
-        animation: none !important;
-
-        text-shadow:
-            0 2px 4px black,
-            0 0 8px black;
-    }
 }
