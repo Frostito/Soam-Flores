@@ -1782,3 +1782,24 @@ h1 {
     font-size: .78rem;
   }
 }
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden !important;
+}
+
+body {
+    position: relative;
+}
+
+.night {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw !important;
+    height: 100vh !important;
+    transform: none !important;
+}
