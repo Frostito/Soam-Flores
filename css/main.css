@@ -1679,91 +1679,24 @@ h1 {
   color: #ffe23f;
   font-family: Arial, sans-serif;
   font-size: clamp(1.8rem, 4vw, 3rem);
-  font-weight: 700;
   letter-spacing: 2px;
-
-  text-shadow:
-    0 2px 5px rgba(0, 0, 0, .95),
-    0 0 10px rgba(255, 226, 63, .35);
-
+  text-shadow: 0 0 10px rgba(255, 226, 63, .5);
   opacity: 0;
   animation: aparecer-mensaje-soam 2s 5.5s forwards;
 }
 
 .mensaje-soam p {
   margin-top: 10px;
-  color: #ffffff;
+  color: rgba(255,255,255,.86);
   font-family: Arial, sans-serif;
-  font-size: clamp(.9rem, 2vw, 1.1rem);
-  font-weight: 900;
-  line-height: 1.55;
-  letter-spacing: .5px;
-
-  text-shadow:
-    0 2px 4px rgba(0, 0, 0, 1),
-    0 0 6px rgba(0, 0, 0, 1),
-    0 0 12px rgba(0, 0, 0, .9);
-
+  font-size: clamp(.82rem, 2vw, 1.05rem);
+  line-height: 1.6;
+  letter-spacing: .8px;
   opacity: 0;
   animation: aparecer-mensaje-soam 2s 6.4s forwards;
 }
+
 .mensaje-final {
-  position: fixed;
-  left: 50%;
-  bottom: 3.2%;
-  transform: translateX(-50%);
-  width: 92%;
-  z-index: 999;
-  text-align: center;
-  color: #ffe23f;
-  font-family: Arial, sans-serif;
-  font-size: clamp(.9rem, 2vw, 1.15rem);
-  font-weight: 700;
-  text-shadow: 0 0 10px rgba(255, 215, 0, .5);
-  pointer-events: none;
-  opacity: 0;
-  animation: aparecer-mensaje-final 2s 8s forwards;
-}
-
-@keyframes aparecer-mensaje-soam {
-  from { opacity: 0; transform: translateY(-12px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-@keyframes aparecer-mensaje-final {
-
-    from {
-        opacity: 0;
-        transform:
-            translateX(-50%)
-            translateY(15px);
-    }
-
-    to {
-        opacity: 1;
-        transform:
-            translateX(-50%)
-            translateY(0);
-    }
-}
-
-@media only screen and (max-width: 600px) {
-  .mensaje-soam {
-    top: 2.5%;
-  }
-
-  .mensaje-soam h1 {
-    font-size: 1.5rem;
-    letter-spacing: 1px;
-  }
-
-  .mensaje-soam p {
-    margin-top: 5px;
-    font-size: .72rem;
-    line-height: 1.45;
-  }
-
-  .mensaje-final {
     position: fixed;
 
     bottom: 4%;
@@ -1805,4 +1738,35 @@ h1 {
         8s
         forwards;
 }
+
+@keyframes aparecer-mensaje-soam {
+  from { opacity: 0; transform: translateY(-12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes aparecer-mensaje-final {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media only screen and (max-width: 600px) {
+  .mensaje-soam {
+    top: 2.5%;
+  }
+
+  .mensaje-soam h1 {
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+  }
+
+  .mensaje-soam p {
+    margin-top: 5px;
+    font-size: .72rem;
+    line-height: 1.45;
+  }
+
+  .mensaje-final {
+    bottom: 1.8%;
+    font-size: .78rem;
+  }
 }
